@@ -1,0 +1,247 @@
+/**
+   |============================
+   | Base styles
+   |============================
+ */
+:root {
+  --iris: #4d5ae5;
+  --navyblue: #2e2f42;
+  --ocean: #404bbf;
+  --white: #fff;
+  --cloud: #f4f4fd;
+  --slate: #434455;
+}
+body {
+  font-family: Roboto, sans-serif;
+  background: #fff;
+  color: var(--slate);
+}
+.link {
+  text-decoration: none;
+  color: #2e2f42;
+}
+.list {
+  list-style-type: none;
+}
+
+.link:hover {
+  color: var(--ocean);
+}
+.link:focus {
+  color: var(--ocean);
+}
+/**
+  |============================
+  | Header styles
+  |============================
+*/
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+
+.studio {
+  color: var(--navyblue);
+}
+.list-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+
+.address {
+  font-style: normal;
+}
+.address-list-item {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+/**
+   |============================
+   | Hero styles
+   |============================
+ */
+.hero-section {
+  background: var(--navyblue);
+}
+.hero-title {
+  color: var(--white);
+  text-align: center;
+  line-height: 1.07;
+  font-size: 56px;
+  letter-spacing: 0.07em;
+}
+.hero-button {
+  background: var(--iris);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+}
+.hero-button:hover {
+  background: var(--ocean);
+}
+.hero-button:focus {
+  background: var(--ocean);
+}
+
+/**
+   |============================
+   | Advantages styles
+   |============================
+ */
+
+.advantages-text {
+  color: var(--slate);
+  font-size: 16px;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.02em;
+}
+.advantages-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+/**
+  |============================
+  | Make styles
+  |============================
+*/
+
+.make-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navyblue);
+}
+.make-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+/**
+  |============================
+  | Team styles
+  |============================
+*/
+.team-section {
+  background: var(--cloud);
+}
+.team-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+
+.team-item {
+  background: var(--white);
+  color: var(--navyblue);
+}
+.team-name {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+.team-text {
+  color: var(--slate);
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+/**
+  |============================
+  | Footer styles
+  |============================
+*/
+.footer-section {
+  background: var(--navyblue);
+}
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+.studio-footer {
+  color: var(--cloud);
+}
+.footer-text {
+  color: var(--cloud);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+/**
+  |============================
+  | Portfolio styles
+  |============================
+*/
+.button-filter {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--iris);
+  background-color: var(--cloud);
+  cursor: pointer;
+}
+.button-filter-text {
+  color: var(--white);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+.button-filter:hover {
+  background-color: var(--ocean);
+  color: var(--white);
+}
+.button-filter:focus {
+  background-color: var(--ocean);
+  color: var(--white);
+}
+
+.portfolio-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
