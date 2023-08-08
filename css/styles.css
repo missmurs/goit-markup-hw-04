@@ -3,6 +3,7 @@
    | Base styles
    |============================
  */
+
 :root {
   --iris: #4d5ae5;
   --navyblue: #2e2f42;
@@ -16,20 +17,61 @@ body {
   background: #fff;
   color: var(--slate);
 }
+/* reset start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 .link {
   text-decoration: none;
   color: #2e2f42;
 }
 .list {
-  list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* reset end */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .link:hover {
   color: var(--ocean);
 }
 .link:focus {
   color: var(--ocean);
 }
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin: 0 auto;
+  line-height: 1.11;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+  width: 324px;
+  margin-bottom: 72px;
+}
+
 /**
   |============================
   | Header styles
@@ -73,12 +115,21 @@ body {
 .hero-section {
   background: var(--navyblue);
 }
+.hero-container {
+  padding-top: 185px;
+  padding-left: 472px;
+  padding-right: 472px;
+  padding-bottom: 295px;
+}
 .hero-title {
   color: var(--white);
   text-align: center;
   line-height: 1.07;
   font-size: 56px;
   letter-spacing: 0.07em;
+  width: 497px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 .hero-button {
   background: var(--iris);
@@ -102,7 +153,18 @@ body {
    | Advantages styles
    |============================
  */
-
+.advantages-section {
+  padding-top: 117px;
+  padding-left: 156px;
+  padding-right: 156px;
+}
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+.advantages-item {
+  flex-basis: calc(100%-24px * 2) / 3;
+}
 .advantages-text {
   color: var(--slate);
   font-size: 16px;
@@ -115,6 +177,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navyblue);
+  margin-bottom: 8px;
 }
 /**
   |============================
@@ -122,14 +185,6 @@ body {
   |============================
 */
 
-.make-title {
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--navyblue);
-}
 .make-item {
   font-weight: 500;
   font-size: 20px;
@@ -144,14 +199,6 @@ body {
 */
 .team-section {
   background: var(--cloud);
-}
-.team-title {
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.11;
-  text-transform: capitalize;
-  letter-spacing: 0.02em;
-  color: var(--navyblue);
 }
 
 .team-item {
