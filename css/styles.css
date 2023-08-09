@@ -329,3 +329,12 @@ img {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.card-set-item {
+  flex-basis: calc(100% - 24px * 2) / 3;
+}
