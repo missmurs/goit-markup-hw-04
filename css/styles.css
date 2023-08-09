@@ -107,6 +107,9 @@ section {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+.nav-list {
+  display: flex;
+}
 /**
    |============================
    | Hero styles
@@ -153,17 +156,18 @@ section {
    | Advantages styles
    |============================
  */
+
 .advantages-section {
-  padding-top: 117px;
-  padding-left: 156px;
-  padding-right: 156px;
+}
+.advantages-container {
+  width: 1158px;
 }
 .advantages-list {
   display: flex;
   gap: 24px;
 }
 .advantages-item {
-  flex-basis: calc(100%-24px * 2) / 3;
+  flex-basis: calc((100% - 24px * 3) / 4);
 }
 .advantages-text {
   color: var(--slate);
