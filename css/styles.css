@@ -77,7 +77,13 @@ section {
   | Header styles
   |============================
 */
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .logo {
+  display: flex;
+  align-items: center;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -85,12 +91,16 @@ section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
+  margin-right: 76px;
 }
 
 .studio {
   color: var(--navyblue);
 }
 .list-item {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -107,8 +117,17 @@ section {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+.nav {
+  display: flex;
+}
 .nav-list {
   display: flex;
+  gap: 40px;
+  margin-right: 332px;
+}
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 /**
    |============================
@@ -119,10 +138,6 @@ section {
   background: var(--navyblue);
 }
 .hero-container {
-  padding-top: 185px;
-  padding-left: 472px;
-  padding-right: 472px;
-  padding-bottom: 295px;
 }
 .hero-title {
   color: var(--white);
@@ -130,7 +145,6 @@ section {
   line-height: 1.07;
   font-size: 56px;
   letter-spacing: 0.07em;
-  width: 497px;
   margin: 0 auto;
   margin-bottom: 48px;
 }
