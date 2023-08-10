@@ -392,7 +392,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
-  row-gap: 24px;
+  row-gap: 48px;
 }
 .card-set-item-portfolio {
   flex-basis: calc((100% - 48px * 2) / 3);
