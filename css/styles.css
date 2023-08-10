@@ -326,8 +326,7 @@ img {
   |============================
 */
 .portfolio-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding: 96px 0 120px 0;
 }
 .portfolio-container {
   padding-top: 96px;
@@ -390,8 +389,9 @@ img {
   color: var(--slate);
 }
 .portfolio-list {
-  --indent: 48px;
+  --indent: 24px;
   --item: 3;
+  row-gap: 48px;
 }
 .portfolio-wrapper {
   padding: 32px 16px;
