@@ -389,9 +389,13 @@ img {
   color: var(--slate);
 }
 .portfolio-list {
-  --indent: 24px;
-  --item: 3;
-  row-gap: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+.card-set-item-portfolio {
+  flex-basis: calc((100% - 48px * 2) / 3);
 }
 .portfolio-wrapper {
   padding: 32px 16px;
