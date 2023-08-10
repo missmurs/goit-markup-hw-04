@@ -44,10 +44,6 @@ img {
   height: auto;
 }
 /* reset end */
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 .link:hover {
   color: var(--ocean);
 }
@@ -154,6 +150,7 @@ img {
  */
 .hero-section {
   background: var(--navyblue);
+  padding: 188px 0;
 }
 .hero-container {
   padding: 188px 0;
@@ -176,7 +173,7 @@ img {
 }
 .hero-button {
   min-width: 169px;
-  min-height: 56px;
+  height: 56px;
   background: var(--iris);
   cursor: pointer;
   font-family: "Roboto", sans-serif;
@@ -190,7 +187,6 @@ img {
   padding: 16px 32px;
   height: 56px;
   border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: none;
 }
 .hero-button:hover {
@@ -205,7 +201,9 @@ img {
    | Advantages styles
    |============================
  */
-
+.advantages-section {
+  padding: 120px 0;
+}
 .advantages-container {
   width: 1158px;
 }
@@ -235,6 +233,9 @@ img {
   | Make styles
   |============================
 */
+.make-section {
+  padding-bottom: 120px;
+}
 .make-item {
   font-weight: 500;
   font-size: 20px;
@@ -253,6 +254,7 @@ img {
 */
 .team-section {
   background: var(--cloud);
+  padding: 120px 0;
 }
 
 .team-item {
