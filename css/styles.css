@@ -45,8 +45,8 @@ img {
 }
 /* reset end */
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .link:hover {
   color: var(--ocean);
@@ -94,6 +94,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #e7e9fc;
 }
 .logo {
   display: flex;
@@ -133,6 +134,7 @@ img {
 }
 .nav {
   display: flex;
+  align-items: center;
 }
 .nav-list {
   display: flex;
@@ -152,17 +154,14 @@ img {
   background: var(--navyblue);
 }
 .hero-container {
-  padding-top: 185px;
-  padding-bottom: 295px;
-  padding-left: 332px;
-  padding-right: 332px;
+  padding: 188px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .hero-title {
   color: var(--white, #fff);
-  width: 496px;
+  max-width: 496px;
   text-align: center;
   margin-bottom: 48px;
   /* Header 1 */
@@ -184,12 +183,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
-  display: inline-flex;
+  display: block;
+  margin: auto;
   padding: 16px 32px;
-  gap: 10px;
+  height: 56px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  border: 1px solid transparent;
+  border: none;
 }
 .hero-button:hover {
   background: var(--ocean);
@@ -233,7 +233,6 @@ img {
   | Make styles
   |============================
 */
-
 .make-item {
   font-weight: 500;
   font-size: 20px;
@@ -265,7 +264,6 @@ img {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--navyblue);
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 .team-text {
@@ -274,11 +272,15 @@ img {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
 }
 .team-list {
   --indent: 24px;
   --item: 4;
+  border-radius: 0px 0px 4px 4px;
+}
+.team-wrapper {
+  padding: 32px 0;
+  text-align: center;
 }
 /**
   |============================
@@ -288,6 +290,9 @@ img {
 .footer-section {
   background: var(--navyblue);
 }
+.footer-container {
+  padding: 100px 0;
+}
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -296,6 +301,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .studio-footer {
   color: var(--cloud);
@@ -312,6 +319,10 @@ img {
   | Portfolio styles
   |============================
 */
+.portfolio-container {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .button-filter {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -338,10 +349,12 @@ img {
 .button-filter:hover {
   background-color: var(--ocean);
   color: var(--white);
+  border: 1px solid transparent;
 }
 .button-filter:focus {
   background-color: var(--ocean);
   color: var(--white);
+  border: 1px solid transparent;
 }
 
 .button-portfolio {
@@ -358,6 +371,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navyblue);
+  margin-bottom: 8px;
 }
 .portfolio-text {
   font-size: 16px;
@@ -366,11 +380,11 @@ img {
   color: var(--slate);
 }
 .portfolio-list {
-  --indent: 24px;
+  --indent: 48px;
   --item: 3;
 }
 .portfolio-wrapper {
-  padding: 32px;
+  padding: 32px 16px;
   border: 1px solid var(--cornflower, #e7e9fc);
   border-top: none;
   text-align: left;
