@@ -13,8 +13,6 @@
   --slate: #434455;
 
   /* other */
-  --indent: 48px;
-  --items: 3;
 }
 body {
   font-family: Roboto, sans-serif;
@@ -243,6 +241,10 @@ img {
   letter-spacing: 0.02em;
   color: var(--navyblue);
 }
+.make-list {
+  --indent: 24px;
+  --item: 3;
+}
 /**
   |============================
   | Team styles
@@ -273,6 +275,10 @@ img {
   line-height: 24px;
   letter-spacing: 0.02em;
   padding-bottom: 32px;
+}
+.team-list {
+  --indent: 24px;
+  --item: 4;
 }
 /**
   |============================
@@ -360,7 +366,7 @@ img {
   color: var(--slate);
 }
 .portfolio-list {
-  --indent: 48px;
+  --indent: 24px;
   --item: 3;
 }
 .portfolio-wrapper {
