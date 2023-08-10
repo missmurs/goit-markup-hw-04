@@ -293,6 +293,8 @@ img {
 */
 .footer-section {
   background: var(--navyblue);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-container {
   padding: 100px 0;
@@ -323,6 +325,10 @@ img {
   | Portfolio styles
   |============================
 */
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .portfolio-container {
   padding-top: 96px;
   padding-bottom: 120px;
