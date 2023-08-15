@@ -323,30 +323,31 @@ img {
 .team-wrapper {
   padding: 32px 0;
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 8px;
 }
 .team-list-wrapper {
+}
+
+.team-list-item {
+  fill: #f4f4fd;
+}
+
+.team-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
-  width: 40px;
-  height: 40px;
-  background-color: var(--iris);
-  border-radius: 50%;
-  fill: var(--cloud);
 }
-.team-list-item {
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: #404bbf;
 }
-.team-list-wrapper:hover,
-.team-list-wrapper:focus {
-  background-color: var(--ocean);
-}
-
 /**
   |============================
   | Customers
