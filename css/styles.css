@@ -328,8 +328,6 @@ img {
   align-items: center;
   gap: 8px;
 }
-.team-list-wrapper {
-}
 
 .team-list-item {
   fill: #f4f4fd;
@@ -366,14 +364,13 @@ img {
 }
 
 .customers-list-wrapper {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-  fill: #8e8f99;
   color: #8e8f99;
 }
 .customers-list-wrapper:hover,
@@ -418,8 +415,6 @@ img {
   width: 264px;
 }
 
-.social-media-container {
-}
 .social-media-title {
   color: var(--white, #fff);
 
@@ -446,8 +441,7 @@ img {
   border-radius: 50%;
   fill: var(--cloud);
 }
-.social-media-list-item {
-}
+
 /**
   |============================
   | Portfolio styles
@@ -503,8 +497,7 @@ img {
   position: relative;
   overflow: hidden;
 }
-.portfolio-img {
-}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -599,9 +592,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-
   transform: translateX(-50%) translateY(-50%);
-
   width: 408px;
   min-height: 584px;
   border-radius: 4px;
@@ -622,8 +613,6 @@ img {
   position: absolute;
   top: 24px;
   right: 24px;
-}
-.modal-btn-icon {
 }
 
 .backdrop.is-hidden {
