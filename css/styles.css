@@ -345,7 +345,9 @@ img {
   align-items: center;
   justify-content: center;
 }
-
+.team-social-link {
+  background-color: #404bbf;
+}
 .team-icon {
   fill: #f4f4fd;
 }
