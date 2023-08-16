@@ -299,6 +299,15 @@ img {
   background: var(--white);
   color: var(--navyblue);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.team-card-list {
+  --indent: 24px;
+  --item: 4;
+}
+.team-wrapper {
+  padding: 32px 0;
 }
 .team-name {
   text-align: center;
@@ -316,37 +325,31 @@ img {
   line-height: 24px;
   letter-spacing: 0.02em;
 }
-.team-list {
-  --indent: 24px;
-  --item: 4;
-}
-.team-wrapper {
-  padding: 32px 0;
+
+.team-icon-list {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 8px;
+  justify-content: center;
+  gap: 24px;
 }
-
-.team-list-item {
-  fill: #f4f4fd;
+.team-icon-list-item {
+  width: 40px;
+  height: 40px;
 }
-
 .team-social-link {
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  justify-content: center;
 }
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: #404bbf;
+
+.team-icon {
+  fill: #f4f4fd;
 }
+
 /**
   |============================
   | Customers
@@ -430,12 +433,19 @@ img {
   display: flex;
   gap: 16px;
 }
+.icon-list {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
 .social-media-link {
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
