@@ -374,6 +374,8 @@ img {
 .customers-list-item {
   height: 88px;
   width: 168px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list-link {
@@ -457,6 +459,7 @@ img {
   justify-content: center;
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-link {
   width: 100%;
