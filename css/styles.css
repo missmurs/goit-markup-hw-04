@@ -368,23 +368,33 @@ img {
   --indent: 24px;
   --item: 6;
 }
+.customers-list-item {
+  height: 88px;
+  width: 168px;
+}
 
-.customers-list-wrapper {
+.customers-list-link {
   width: 100%;
   height: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #8e8f99;
-}
-.customers-list-wrapper:hover,
-.customers-list-wrapper:focus {
-  border-color: #404bbf;
-  color: #404bbf;
+  fill: #8e8f99;
 }
 
-.customers-list-item {
-  fill: currentColor;
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border-color: #404bbf;
+  color: #404bbf;
+  fill: #404bbf;
 }
+
+.customers-icon {
+}
+
 /**
   |============================
   | Footer styles
