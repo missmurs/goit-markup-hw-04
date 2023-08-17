@@ -415,9 +415,22 @@
                     </li>
 
                 </ul>
-
-
             </div>
+            <div class="footer-form-box">
+
+                <p class="form-title">Subscribe</p>
+                <form class="footer-form">
+                    <input type="email" class="footer-form-input" name="user_email" id="" placeholder="E-mail">
+                    <button type="Subscribe" class="btn-subscribe">Subscribe
+                        <svg class="icon-paper-plane" width="24" height="24">
+                            <use href="./images/icons.svg#icon-paper-plane"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+
+
+
         </div>
 
     </footer>
@@ -428,6 +441,33 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <form class="modal-form" name="contact_form">
+                <div>
+                    <strong class="form-title">Leave your contacts and we will call you back</strong>
+                    <label for="">Name
+                        <input type="text" name="user_name" required>
+                    </label>
+
+                </div>
+                <div>
+                    <label for="">Phone
+                        <input type="tel" name="user_tel" required>
+                    </label>
+
+                </div>
+                <div>
+                    <label for="">Email
+                        <input type="email" name="user_email" id="">
+                    </label>
+
+                </div>
+                <div>
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" id="comment" rows="10" placeholder="Text input"></textarea>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>

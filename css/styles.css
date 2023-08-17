@@ -438,7 +438,9 @@ img {
   letter-spacing: 0.02em;
   width: 264px;
 }
-
+.social-media-container {
+  margin-right: 80px;
+}
 .social-media-title {
   font-weight: 500;
   font-size: 16px;
@@ -475,6 +477,77 @@ img {
 }
 .social-media-list-item {
   fill: var(--cloud);
+}
+/* footer form */
+.footer-form-box {
+}
+.form-title {
+  color: var(--white);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+  padding-bottom: 16px;
+}
+.footer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer-form-input {
+  width: 264px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  outline: transparent;
+  background-color: transparent;
+  color: var(--white);
+  border-radius: 4px;
+  border: 1px solid var(--white, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer-form-input:hover,
+.footer-form-input:focus {
+  border-color: #4d5ae5;
+}
+
+.btn-subscribe {
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  background: var(--iris);
+  color: var(--white);
+  text-align: center;
+  border: none;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus {
+  background-color: var(--ocean);
+}
+.icon-paper-plane {
+  fill: var(--white);
+  margin-left: 16px;
+}
+.footer-form-input::placeholder {
+  color: var(--white);
 }
 /**
   |============================
@@ -670,6 +743,7 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px;
 }
 .modal-btn {
   position: absolute;
@@ -702,4 +776,24 @@ img {
 }
 .modal-btn-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  max-height: 250px;
+  resize: none;
+}
+
+.form-title {
+  color: var(--navyblue, #2e2f42);
+  text-align: center;
+
+  /* Body Medium */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
 }
