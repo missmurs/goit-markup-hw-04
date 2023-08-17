@@ -16,7 +16,7 @@
 }
 body {
   font-family: Roboto, sans-serif;
-  background: #fff;
+  background: var(--white);
   color: var(--slate);
 }
 /* reset start */
@@ -31,7 +31,7 @@ p {
 }
 .link {
   text-decoration: none;
-  color: #2e2f42;
+  color: var(--navyblue);
 }
 .list {
   list-style: none;
@@ -121,7 +121,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: #404bbf;
+  color: var(--navyblue);
 }
 .list-item::after {
   content: "";
@@ -135,7 +135,7 @@ img {
 }
 .list-item.current::after {
   background-color: var(--ocean);
-  color: #404bbf;
+  color: var(--ocean);
   bottom: -1px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -188,11 +188,10 @@ img {
   flex-direction: column;
 }
 .hero-title {
-  color: var(--white, #fff);
+  color: var(--white);
   max-width: 496px;
   text-align: center;
   margin-bottom: 48px;
-  /* Header 1 */
   font-family: Roboto;
   font-size: 56px;
   font-style: normal;
@@ -326,6 +325,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .team-icon-list {
@@ -341,7 +341,7 @@ img {
 .team-social-link {
   width: 100%;
   height: 100%;
-  background-color: #4d5ae5;
+  background-color: var(--iris);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -350,10 +350,10 @@ img {
 }
 .team-social-link:hover,
 .team-social-link:focus {
-  background-color: #404bbf;
+  background-color: var(--ocean);
 }
 .team-icon {
-  fill: #f4f4fd;
+  fill: var(--cloud);
 }
 
 /**
@@ -364,7 +364,7 @@ img {
 
 .customers-section {
   padding: 120px 0;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .customers-list {
@@ -392,9 +392,9 @@ img {
 
 .customers-list-link:hover,
 .customers-list-link:focus {
-  border-color: #404bbf;
-  color: #404bbf;
-  fill: #404bbf;
+  border-color: var(--ocean);
+  color: var(--ocean);
+  fill: var(--ocean);
 }
 
 /* .customers-icon {
@@ -444,7 +444,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--white);
   margin-bottom: 16px;
 }
 .social-media-list {
@@ -461,7 +461,7 @@ img {
 .social-media-link {
   width: 100%;
   height: 100%;
-  background-color: #4d5ae5;
+  background-color: var(--iris);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -474,7 +474,7 @@ img {
   background-color: #31d0aa;
 }
 .social-media-list-item {
-  fill: #f4f4fd;
+  fill: var(--cloud);
 }
 /**
   |============================
@@ -531,8 +531,8 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #4d5ae5;
-  background-color: #f4f4fd;
+  color: var(--iris);
+  background-color: var(--cloud);
   cursor: pointer;
   padding: 12px 24px;
   border: 1px solid #e7e9fc;
@@ -545,8 +545,8 @@ img {
 
 .btn:hover,
 .btn:focus {
-  color: #ffffff;
-  background-color: #404bbf;
+  color: var(--white);
+  background-color: var(--ocean);
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -587,9 +587,9 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--cloud);
   padding: 40px 32px;
-  background-color: #4d5ae5;
+  background-color: var(--iris);
   height: 100%;
   width: 100%;
   transform: translateY(100%);
@@ -605,20 +605,20 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 .portfolio-text-container-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--navyblue);
+  margin-bottom: 8px;
 }
 .portfolio-text-container-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--slate);
 }
 /* .link {
 } */
@@ -690,9 +690,9 @@ img {
 }
 .modal-btn:hover,
 .modal-btn:focus {
-  background-color: #404bbf;
+  background-color: var(--ocean);
   border: none;
-  fill: #ffffff;
+  fill: var(--white);
 }
 
 .backdrop.is-hidden {
